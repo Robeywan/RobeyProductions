@@ -1,0 +1,35 @@
+[
+  {
+    "filename": "indigenous-card-background.webp",
+    "type": "AI-generated decorative card background",
+    "mode": "Built-in image_gen, new image generation",
+    "prompt": "Use case: stylized-concept.\nAsset type: square decorative raster background for the lower text area of a history website card, behind white title and body text.\nPrimary request: a rich deep forest green and dark teal woven texture with original stylized floral beadwork motifs inspired by Woodland floral visual language. This is a clearly contemporary digital decorative design, not an authentic artifact or museum object.\nComposition: square full-bleed opaque background. Restrained warm ochre, turquoise, and ivory flowers and leaves placed only around the outer edges and corners. Keep the central 65 percent very quiet, low contrast, and dark green for readable white text overlays. Tasteful museum-history aesthetic with detailed but subtle textile texture.\nConstraints: no text, letters, numbers, logos, people, faces, sacred symbols, emblems, flags, photoreal historical claims, watermark, or labels. Do not create or alter a historical photograph. No bright central motifs. Opaque background, no transparency.",
+    "dimensions": [
+      900,
+      900
+    ],
+    "bytes": 218120
+  },
+  {
+    "filename": "military-card-background.webp",
+    "type": "AI-generated decorative card background",
+    "mode": "Built-in image_gen, new image generation",
+    "prompt": "Use case: stylized-concept\nAsset type: square decorative background texture for the lower text area of an American military history website card.\nPrimary request: A square deep dark military olive green canvas texture with subtle aged brass decorative framing, fine topographic contour traces, and discreet small five-point stars at the outer edges and corners. Atmospheric, restrained military archive stationery aesthetic.\nComposition: Quiet dark olive central 65 percent of the square, reserved for white website title and body text added later in HTML. Decorative detail stays around outer edges, softly understated, with enough visible space and depth to be attractive as an actual bitmap backdrop.\nStyle: Clearly contemporary decorative digital artwork, tactile canvas and paper grain, delicate aged brass linework, tasteful and dignified, no imitation historical artifact.\nColor palette: Deep dark olive greens with restrained aged brass accents.\nConstraints: Fully opaque square background. No text, letters, numbers, real unit insignia, medals, logos, emblems, weapons, people, photographs, fake documents, watermarks, or writing. Generate only this decorative texture; do not include a mockup or website layout.",
+    "dimensions": [
+      900,
+      900
+    ],
+    "bytes": 230252
+  },
+  {
+    "filename": "politics-card-background.webp",
+    "type": "AI-generated decorative card background",
+    "mode": "Built-in image_gen, new image generation",
+    "prompt": "Use case: stylized-concept.\nAsset type: square decorative raster background for the lower text portion of an American political history website card.\nPrimary request: A deep midnight navy blue field, with faded crimson and ivory American flag-inspired ribbon and stripe details and a few tasteful white stars decorating only the outer edges and corners. Subtle antique woven paper texture; dignified presidential and civic history style.\nComposition: Keep the central 65% quiet, dark navy, and visually uncluttered for white title and body text to be overlaid later. Sparse decorative details confined to the perimeter.\nStyle: Contemporary decorative digital design, not an archival artifact. Square format, opaque full background.\nConstraints: No text, letters, numbers, seals, political party logos, people, faces, or purported historical documents. No portraits; existing real Washington and Lincoln portraits will remain separate and unchanged above this background.",
+    "dimensions": [
+      900,
+      900
+    ],
+    "bytes": 55576
+  }
+]

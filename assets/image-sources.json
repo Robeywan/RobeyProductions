@@ -1,0 +1,116 @@
+[
+  {
+    "filename": "anishinaabe-bandolier-bag.jpg",
+    "title": "Bandolier (Shoulder) Bag",
+    "culture": [
+      "Northeastern Woodlands, Great Lakes Region, Anishinaabe (Ojibwe) People"
+    ],
+    "creator": "Unrecorded artist",
+    "date": "1880s?",
+    "accession": "1982.61",
+    "source_url": "https://clevelandart.org/art/1982.61",
+    "metadata_url": "https://openaccess-api.clevelandart.org/api/artworks/?accession_number=1982.61",
+    "image_url": "https://openaccess-cdn.clevelandart.org/1982.61/1982.61_web.jpg",
+    "width": 507,
+    "height": 893,
+    "rights": "CC0 1.0 Universal (public domain dedication)",
+    "rights_url": "https://www.clevelandart.org/open-access",
+    "credit": "The Cleveland Museum of Art, James Albert and Mary Gardiner Ford Memorial Fund, 1982.61",
+    "notes": "Authentic museum photograph of historic artwork; not AI generated. Museum rights and attribution verified on the current official collection page and open-access API."
+  },
+  {
+    "filename": "dine-or-zuni-banded-blanket.jpg",
+    "title": "Banded Wearing Blanket (Diyugi)",
+    "culture": [
+      "Native North American, Southwest, Navajo (Diné) or Zuni"
+    ],
+    "creator": "Unrecorded artist",
+    "date": "c. 1880–90",
+    "accession": "1921.555",
+    "source_url": "https://clevelandart.org/art/1921.555",
+    "metadata_url": "https://openaccess-api.clevelandart.org/api/artworks/?accession_number=1921.555",
+    "image_url": "https://openaccess-cdn.clevelandart.org/1921.555/1921.555_web.jpg",
+    "width": 648,
+    "height": 893,
+    "rights": "CC0 1.0 Universal (public domain dedication)",
+    "rights_url": "https://www.clevelandart.org/open-access",
+    "credit": "The Cleveland Museum of Art, Gift of J. H. Wade, 1921.555",
+    "notes": "Authentic museum photograph of historic artwork; not AI generated. Museum rights and attribution verified on the current official collection page and open-access API."
+  },
+  {
+    "filename": "sitting-bull-barry-1885.jpg",
+    "title": "Sitting Bull",
+    "subject": "Sitting Bull, 1831–1890 (as identified by LOC)",
+    "creator": "D. F. (David Francis) Barry, photographer",
+    "date": "1885",
+    "source_url": "https://www.loc.gov/item/94506170/",
+    "metadata_url": "https://www.loc.gov/item/94506170/?fo=json",
+    "image_url": "https://tile.loc.gov/storage-services/service/pnp/ppmsca/39800/39879v.jpg",
+    "width": 687,
+    "height": 1024,
+    "rights": "No known restrictions on publication (Library of Congress rights advisory); published in 1885.",
+    "credit": "Library of Congress Prints and Photographs Division, LC-DIG-ppmsca-39879; photograph by D. F. Barry, 1885",
+    "notes": "Authentic historic portrait, digital file from original albumen photograph. Image not AI generated. Exact named subject, photographer, date and rights advisory verified in LOC catalog JSON."
+  },
+  {
+    "filename": "lincoln.jpg",
+    "title": "Abraham Lincoln, head-and-shoulders portrait, facing front",
+    "date": "November 8, 1863",
+    "creator": "Alexander Gardner; print by Moses P. Rice",
+    "sourceUrl": "https://www.loc.gov/item/2002725260/",
+    "imageUrl": "https://tile.loc.gov/storage-services/service/pnp/ppmsca/24000/24019v.jpg",
+    "rights": "No known restrictions on publication.",
+    "credit": "Library of Congress, Prints & Photographs Division. LC-DIG-ppmsca-24019."
+  },
+  {
+    "filename": "washington.jpg",
+    "title": "George Washington, full-length portrait (photographic reproduction of Gilbert Stuart painting)",
+    "date": "Reproduction between 1900 and 1920",
+    "creator": "Gilbert Stuart; Detroit Publishing Company",
+    "sourceUrl": "https://www.loc.gov/resource/det.4a26121/",
+    "imageUrl": "https://tile.loc.gov/storage-services/service/pnp/det/4a20000/4a26000/4a26100/4a26121v.jpg",
+    "rights": "No known restrictions on publication.",
+    "credit": "Library of Congress, Prints & Photographs Division, Detroit Publishing Company Collection. LC-DIG-det-4a26121."
+  },
+  {
+    "filename": "normandy.jpg",
+    "title": "Into the Jaws of Death",
+    "date": "June 6, 1944",
+    "creator": "Robert F. Sargent, U.S. Coast Guard",
+    "sourceUrl": "https://www.archives.gov/research/still-pictures/military",
+    "rightsSourceUrl": "https://www.mycg.uscg.mil/MyCG-Home/Downloads/igphoto/2003480909/",
+    "imageUrl": "https://www.archives.gov/files/research/still-pictures/26-g-2343.jpg",
+    "rights": "U.S. Coast Guard photograph; official U.S. Coast Guard image page states IMAGE IS PUBLIC DOMAIN.",
+    "credit": "U.S. Coast Guard photograph by Chief Photographer’s Mate Robert F. Sargent. National Archives, 26-G-2343."
+  },
+  {
+    "filename": "suffrage.jpg",
+    "title": "Suffrage parade, March 3, 1913",
+    "date": "March 3, 1913",
+    "creator": "National Photo Company Collection",
+    "sourceUrl": "https://www.loc.gov/pictures/item/2016844711/",
+    "imageUrl": "https://cdn.loc.gov/service/pnp/npcc/20200/20233v.jpg",
+    "rights": "No known restrictions on publication.",
+    "credit": "Library of Congress, Prints & Photographs Division, National Photo Company Collection. LC-DIG-npcc-20233."
+  },
+  {
+    "filename": "douglass.jpg",
+    "title": "Frederick Douglass, head-and-shoulders portrait, facing right",
+    "date": "April 26, 1870",
+    "creator": "George Francis Schreiber",
+    "sourceUrl": "https://www.loc.gov/item/2004671911/",
+    "imageUrl": "https://tile.loc.gov/storage-services/service/pnp/ppmsca/69200/69249v.jpg",
+    "rights": "No known restrictions on publication.",
+    "credit": "Library of Congress, Prints & Photographs Division. LC-DIG-ppmsca-69249."
+  },
+  {
+    "filename": "roosevelt.jpg",
+    "title": "Theodore Roosevelt, 26th President of the United States",
+    "date": "1905",
+    "creator": "Photograph/print published as supplement to the New York Times, March 5, 1905; copyright by A. Hewitt",
+    "sourceUrl": "https://www.loc.gov/pictures/item/2013645476/",
+    "imageUrl": "https://tile.loc.gov/storage-services/service/pnp/ppmsca/36000/36075v.jpg",
+    "rights": "No known restrictions on publication.",
+    "credit": "Library of Congress, Prints & Photographs Division. LC-DIG-ppmsca-36075."
+  }
+]

@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A free archive of history study guides for students, teachers, researchers and anyone curious about the past. Explore any of the growing historical websites.">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#183f30">
+  <title>Robey Productions | History Study Guides</title>
+  <link rel="canonical" href="https://robeyproductions.org/">
+  <style>
+    :root { --green:#183f30; --ink:#203a2d; --muted:#526057; --paper:#f8f5ec; --line:#d7d3c6; --banner-gold:#c9a34b; --banner-red:#a02a29; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:#b9ac91; color:var(--ink); font-family:Arial, Helvetica, sans-serif; -webkit-font-smoothing:antialiased; }
+    a { color:inherit; }
+    a:focus-visible,summary:focus-visible { outline:3px solid #a45b29; outline-offset:5px; }
+    .skip { position:fixed; top:-80px; left:20px; z-index:10; padding:14px 20px; background:white; }
+    .skip:focus { top:15px; }
+    .backdrop { position:fixed; inset:0; z-index:-1; overflow:hidden; pointer-events:none; background:#a49479; }
+    .photo { position:absolute; margin:0; padding:9px 9px 23px; background:#e9e1cf; box-shadow:0 9px 24px #221c1552; }
+    .photo img { width:100%; height:100%; display:block; object-fit:cover; filter:saturate(.8) sepia(.12); }
+    .photo.washington { width:31%; height:55%; top:-10%; left:-4%; transform:rotate(-10deg); }
+    .photo.lincoln { width:27%; height:62%; top:-9%; right:-3%; transform:rotate(9deg); }
+    .photo.portrait { width:30%; height:50%; top:34%; left:-9%; transform:rotate(7deg); }
+    .photo.military { width:43%; height:48%; top:35%; right:-13%; transform:rotate(-8deg); }
+    .photo.history { width:40%; height:47%; top:-17%; left:27%; transform:rotate(-4deg); }
+    .photo.blanket { width:28%; height:53%; bottom:-28%; right:7%; transform:rotate(11deg); }
+    .photo.beadwork { width:27%; height:49%; bottom:-30%; left:3%; transform:rotate(-12deg); }
+    .photo.beadwork img { object-fit:contain; background:#808179; }
+    .photo.douglass { width:28%; height:42%; bottom:-28%; left:31%; transform:rotate(-6deg); }
+    .backdrop::after { content:''; position:absolute; inset:0; background:linear-gradient(90deg,#f0e8d528,#f0e8d555 30%,#f0e8d555 70%,#f0e8d528); }
+    .masthead { text-align:center; padding:37px 24px 34px; background:var(--green); color:var(--banner-gold); border-top:7px solid #123124; box-shadow:0 3px 18px #1d241d22; }
+    h1,h2,h3,p { margin-top:0; }
+    h1 { margin:0; font-family:Georgia, 'Times New Roman', serif; font-size:clamp(34px,4.5vw,65px); font-weight:700; letter-spacing:.075em; line-height:1.15; text-transform:uppercase; color:#fff; }
+    .masthead h1 { color:inherit; -webkit-text-stroke:.65px var(--banner-red); paint-order:stroke fill; }
+    h1 span { display:block; font-family:Arial, Helvetica, sans-serif; font-size:13px; font-weight:500; letter-spacing:.32em; margin-bottom:10px; }
+    .masthead h1 span { -webkit-text-stroke:.3px var(--banner-red); paint-order:stroke fill; }
+    .shell { width:min(1190px,calc(100% - 96px)); margin-inline:auto; }
+    .masthead-introduction { max-width:960px; margin:22px auto 0; font-size:18px; line-height:1.8; letter-spacing:normal; text-transform:none; color:inherit; -webkit-text-stroke:.28px var(--banner-red); paint-order:stroke fill; }
+    .collection { margin-top:32px; scroll-margin-top:24px; }
+    .section-heading { display:flex; justify-content:space-between; align-items:center; gap:26px; background:var(--green); color:#fff; padding:22px 26px; margin-bottom:20px; text-transform:uppercase; }
+    h2 { font-family:Georgia, 'Times New Roman', serif; font-size:32px; font-weight:400; letter-spacing:-.5px; margin-bottom:0; }
+    .section-heading h2 { flex:none; font-size:30px; letter-spacing:.015em; line-height:1.25; }
+    .section-heading p { max-width:530px; font-size:11px; line-height:1.8; letter-spacing:.07em; color:#fff; text-align:right; margin:0; }
+    .site-list { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:23px; align-items:stretch; }
+    .site-list > li { display:flex; min-width:0; }
+    .site-card { width:100%; display:flex; flex-direction:column; text-decoration:none; background:var(--paper); box-shadow:0 8px 25px #1c201b2b; border:1px solid #eee6d7; transition:transform .2s,box-shadow .2s; }
+    .site-card:hover { transform:translateY(-5px); box-shadow:0 14px 28px #1c201b3d; }
+    .card-art { margin:0; position:relative; height:242px; flex:none; overflow:hidden; background:#777b71; border-bottom:5px solid #526950; }
+    .card-art > img { display:block; width:100%; height:100%; object-fit:cover; }
+    .indigenous .card-art { background:radial-gradient(ellipse at center,#a5a390,#6f776c); }
+    .indigenous .card-art > img { object-fit:cover; object-position:50% 75%; padding:0; transform:scale(1.4); transform-origin:50% 65%; }
+    .military .card-art { border-bottom-color:#a27e4b; background:#455447; }
+    .military .card-art > img { object-position:center 48%; }
+    .politics .card-art { display:grid; grid-template-columns:1fr 1fr; gap:3px; background:#ebe2cc; border-bottom-color:#5c697a; }
+    .politics .card-art img { width:100%; height:100%; object-fit:cover; min-width:0; }
+    .politics .washington-portrait { object-position:center 25%; }
+    .politics .lincoln-portrait { object-position:center 20%; }
+    .image-note { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent,#132419da); color:#fffaf0; font-size:9px; letter-spacing:.08em; padding:24px 15px 11px; line-height:1.4; }
+    .card-content { display:flex; flex-direction:column; flex:1; padding:23px 23px 21px; color:#fff; background-size:100% 100%; background-position:center; background-repeat:no-repeat; }
+    .indigenous .card-content { background-color:#082b24; background-image:linear-gradient(#082b24a3,#082b24a3),url('assets/indigenous-card-background.webp'); }
+    .military .card-content { background-color:#20280f; background-image:linear-gradient(#161c0ca3,#161c0ca3),url('assets/military-card-background.webp'); }
+    .politics .card-content { background-color:#09162c; background-image:linear-gradient(#09162ca3,#09162ca3),url('assets/politics-card-background.webp'); }
+    .card-category { text-transform:uppercase; font-size:9px; font-weight:600; letter-spacing:.17em; color:#fff; margin:0 0 12px; }
+    h3 { font-family:Georgia, 'Times New Roman', serif; font-size:28px; font-weight:400; line-height:1.13; letter-spacing:-.5px; margin-bottom:14px; }
+    .card-description { color:#fff; font-size:13px; line-height:1.8; margin-bottom:20px; }
+    .card-bottom { border-top:1px solid #ffffff66; padding-top:16px; display:flex; align-items:center; justify-content:space-between; gap:10px; margin-top:auto; }
+    .domain { font-size:20px; font-weight:700; line-height:1.45; letter-spacing:-.025em; overflow-wrap:anywhere; text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:4px; }
+    .arrow { font-size:22px; line-height:1; color:#fff; flex:none; }
+    .credits { width:fit-content; max-width:100%; margin:22px auto 0; padding:9px 14px; background:var(--green); color:#fff; font-size:11px; line-height:1.8; }
+    .credits[open] { width:min(640px,100%); padding:16px 20px; }
+    .credits summary { cursor:pointer; color:#fff; font-size:10px; letter-spacing:.03em; padding:2px 0; }
+    .credits .credit-intro { margin:14px 0 10px; }
+    .credits ul { margin:0; padding-left:18px; }
+    .credits li { padding:0 0 9px; break-inside:avoid; }
+    .credits a { text-decoration-thickness:1px; text-underline-offset:3px; }
+    .credits a:focus-visible,.credits summary:focus-visible { outline-color:#fff; }
+    .page-end { height:40px; }
+    @media (min-width:1700px) { .shell { width:min(1330px,calc(100% - 140px)); } .card-art { height:275px; } }
+    @media (max-width:1000px) {
+      .shell { width:calc(100% - 48px); }
+      .site-list { gap:16px; }
+      .card-content { padding:20px 18px; }
+      .card-art { height:210px; }
+      h3 { font-size:25px; }
+      .domain { font-size:18px; }
+      .section-heading p { font-size:10px; }
+    }
+    @media (max-width:730px) {
+      .masthead { padding:27px 18px 28px; }
+      h1 { font-size:clamp(28px,6.7vw,47px); letter-spacing:.045em; }
+      h1 span { font-size:11px; letter-spacing:.27em; }
+      .shell { width:calc(100% - 36px); }
+      .masthead-introduction { font-size:16px; line-height:1.85; margin-top:20px; }
+      .collection { margin-top:25px; }
+      .section-heading { padding:18px 20px; margin-bottom:18px; flex-direction:column; align-items:flex-start; gap:12px; }
+      h2 { font-size:27px; }
+      .section-heading h2 { font-size:25px; }
+      .section-heading p { display:block; max-width:none; text-align:left; font-size:10px; }
+      .site-list { grid-template-columns:1fr; gap:23px; }
+      .site-card { max-width:520px; margin-inline:auto; }
+      .card-art { height:260px; }
+      .card-content { padding:23px 25px; }
+      h3 { font-size:30px; }
+      .card-description { font-size:14px; margin-bottom:20px; }
+      .domain { font-size:20px; }
+      .card-category { font-size:10px; }
+      .photo.washington { width:65%; height:47%; top:-8%; left:-25%; }
+      .photo.lincoln { width:61%; height:50%; right:-25%; top:7%; }
+      .photo.portrait { width:68%; height:43%; top:42%; left:-28%; }
+      .photo.military { width:93%; height:35%; right:-47%; top:52%; }
+      .photo.history { width:80%; height:30%; top:-12%; left:22%; }
+      .photo.beadwork { width:60%; height:40%; left:-22%; bottom:-20%; }
+      .photo.blanket { width:65%; height:40%; right:-15%; bottom:-18%; }
+      .photo.douglass { display:none; }
+    }
+    @media (max-width:370px) { h1 { font-size:27px; } .card-content { padding:22px 20px; } h3 { font-size:27px; } .domain { font-size:18px; } }
+    @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } * { transition:none !important; } }
+    @media print { .backdrop,.skip,.image-note,.credits,.page-end { display:none; } body { background:white; } .shell { width:100%; } .masthead { box-shadow:none; } .site-list { gap:15px; } .site-card { box-shadow:none; break-inside:avoid; } .card-art { height:170px; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="backdrop" aria-hidden="true">
+    <figure class="photo washington"><img src="assets/washington.jpg" alt=""></figure>
+    <figure class="photo history"><img src="assets/history.jpg" alt=""></figure>
+    <figure class="photo lincoln"><img src="assets/lincoln.jpg" alt=""></figure>
+    <figure class="photo portrait"><img src="assets/indigenous-portrait.jpg" alt=""></figure>
+    <figure class="photo military"><img src="assets/military.jpg" alt=""></figure>
+    <figure class="photo blanket"><img src="assets/blanket.jpg" alt=""></figure>
+    <figure class="photo douglass"><img src="assets/douglass.jpg" alt=""></figure>
+    <figure class="photo beadwork"><img src="assets/indigenous-art.jpg" alt=""></figure>
+  </div>
+  <header class="masthead">
+    <h1><span>WELCOME TO</span>ROBEY PRODUCTIONS</h1>
+    <p class="masthead-introduction">A free archive of history study guides for students, teachers, researchers and anyone curious about the past. Explore any of the growing historical websites.</p>
+  </header>
+  <main id="main" class="shell">
+    <section class="collection" id="collection" aria-labelledby="collection-title">
+      <div class="section-heading"><h2 id="collection-title">Explore the collection</h2><p>New history projects will be added as the collection grows.</p></div>
+      <!-- To add a project, copy a list item, update its destination and copy, and add a credited archival image. -->
+      <ul class="site-list">
+        <li>
+          <a class="site-card indigenous" href="https://IndigenousNorthAmerica.org">
+            <figure class="card-art">
+              <img src="assets/indigenous-art.jpg" width="507" height="893" alt="Anishinaabe (Ojibwe) bandolier bag decorated with colorful floral beadwork.">
+              <figcaption class="image-note">ANISHINAABE (OJIBWE) BEADWORK</figcaption>
+            </figure>
+            <div class="card-content">
+              <p class="card-category">Peoples &amp; cultures</p>
+              <h3>Indigenous<br>North America</h3>
+              <p class="card-description">Explore the histories of Indigenous peoples across North America.</p>
+              <div class="card-bottom"><span class="domain">Indigenous<wbr>NorthAmerica.org</span><span class="arrow" aria-hidden="true">↗</span></div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="site-card military" href="https://TheAmericanMilitaryRecord.org">
+            <figure class="card-art">
+              <img src="assets/military.jpg" alt="American troops leave a landing craft and wade toward Omaha Beach on D-Day, June 6, 1944.">
+              <figcaption class="image-note">NORMANDY · JUNE 6, 1944</figcaption>
+            </figure>
+            <div class="card-content">
+              <p class="card-category">Service &amp; history</p>
+              <h3>The American<br>Military Record</h3>
+              <p class="card-description">Explore American military history.</p>
+              <div class="card-bottom"><span class="domain">TheAmerican<wbr>MilitaryRecord.org</span><span class="arrow" aria-hidden="true">↗</span></div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="site-card politics" href="https://AmericanPoliticalHistory.org">
+            <figure class="card-art">
+              <img class="washington-portrait" src="assets/washington.jpg" alt="Historic photographic reproduction of Gilbert Stuart’s portrait of George Washington.">
+              <img class="lincoln-portrait" src="assets/lincoln.jpg" alt="Portrait photograph of Abraham Lincoln, 1863.">
+              <figcaption class="image-note">PRESIDENTS &amp; POLITICAL HISTORY</figcaption>
+            </figure>
+            <div class="card-content">
+              <p class="card-category">Politics &amp; the presidency</p>
+              <h3>American<br>Political History</h3>
+              <p class="card-description">Explore American political history.</p>
+              <div class="card-bottom"><span class="domain">American<wbr>PoliticalHistory.org</span><span class="arrow" aria-hidden="true">↗</span></div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <details class="credits" id="image-credits">
+      <summary>Historical images &amp; credits</summary>
+      <p class="credit-intro">Historical photographs and museum artworks come from public collections. The three decorative card backgrounds were created with AI for Robey Productions.</p>
+      <ul>
+        <li><a href="https://www.clevelandart.org/art/1982.61">Bandolier (Shoulder) Bag</a>, Anishinaabe (Ojibwe), 1880s? The Cleveland Museum of Art, James Albert and Mary Gardiner Ford Memorial Fund, 1982.61. CC0.</li>
+        <li><a href="https://www.clevelandart.org/art/1921.555">Banded Wearing Blanket (Diyugi)</a>, Navajo (Diné) or Zuni, c. 1880–90. The Cleveland Museum of Art, Gift of J. H. Wade, 1921.555. CC0.</li>
+        <li><a href="https://www.loc.gov/item/94506170/">Sitting Bull</a>, photographed by D. F. Barry, 1885. Library of Congress. No known restrictions on publication.</li>
+        <li><a href="https://www.loc.gov/resource/det.4a26121/">George Washington</a>, historic photographic reproduction of a Gilbert Stuart painting. Detroit Publishing Company collection, Library of Congress. No known restrictions on publication.</li>
+        <li><a href="https://www.loc.gov/item/2002725260/">Abraham Lincoln</a>, November 8, 1863. Library of Congress. No known restrictions on publication.</li>
+        <li><a href="https://www.archives.gov/research/still-pictures/military">Into the Jaws of Death</a>, Robert F. Sargent, U.S. Coast Guard, June 6, 1944. National Archives, 26-G-2343. Public domain.</li>
+        <li><a href="https://www.loc.gov/pictures/item/2016844711/">Suffrage parade</a>, March 3, 1913. Library of Congress. No known restrictions on publication.</li>
+        <li><a href="https://www.loc.gov/item/2004671911/">Frederick Douglass</a>, George Francis Schreiber, April 26, 1870. Library of Congress. No known restrictions on publication.</li>
+      </ul>
+    </details>
+    <div class="page-end" aria-hidden="true"></div>
+  </main>
+</body>
+</html>
