@@ -112,5 +112,14 @@
     "imageUrl": "https://tile.loc.gov/storage-services/service/pnp/ppmsca/36000/36075v.jpg",
     "rights": "No known restrictions on publication.",
     "credit": "Library of Congress, Prints & Photographs Division. LC-DIG-ppmsca-36075."
+  },
+  {
+    "filename": "pfingsten-library.jpg",
+    "title": "Pfingsten Family Library homepage illustration",
+    "sourceUrl": "https://pfingstenlibrary.com/",
+    "imageUrl": "https://pfingstenlibrary.com/assets/home-library.jpg",
+    "width": 1536,
+    "height": 1024,
+    "credit": "Pfingsten Family Library"
   }
 ]

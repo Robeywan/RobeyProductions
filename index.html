@@ -46,7 +46,7 @@
     h2 { font-family:Georgia, 'Times New Roman', serif; font-size:32px; font-weight:400; letter-spacing:-.5px; margin-bottom:0; }
     .section-heading h2 { flex:none; font-size:30px; letter-spacing:.015em; line-height:1.25; }
     .section-heading p { max-width:530px; font-size:11px; line-height:1.8; letter-spacing:.07em; color:#fff; text-align:right; margin:0; }
-    .site-list { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:23px; align-items:stretch; }
+    .site-list { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:23px; align-items:stretch; }
     .site-list > li { display:flex; min-width:0; }
     .site-card { width:100%; display:flex; flex-direction:column; text-decoration:none; background:var(--paper); box-shadow:0 8px 25px #1c201b2b; border:1px solid #eee6d7; transition:transform .2s,box-shadow .2s; }
     .site-card:hover { transform:translateY(-5px); box-shadow:0 14px 28px #1c201b3d; }
@@ -60,11 +60,14 @@
     .politics .card-art img { width:100%; height:100%; object-fit:cover; min-width:0; }
     .politics .washington-portrait { object-position:center 25%; }
     .politics .lincoln-portrait { object-position:center 20%; }
+    .library .card-art { background:#342217; border-bottom-color:#9b6a3d; }
+    .library .card-art > img { object-position:85% 60%; }
     .image-note { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent,#132419da); color:#fffaf0; font-size:9px; letter-spacing:.08em; padding:24px 15px 11px; line-height:1.4; }
     .card-content { display:flex; flex-direction:column; flex:1; padding:23px 23px 21px; color:#fff; background-size:100% 100%; background-position:center; background-repeat:no-repeat; }
     .indigenous .card-content { background-color:#082b24; background-image:linear-gradient(#082b24a3,#082b24a3),url('assets/indigenous-card-background.webp'); }
     .military .card-content { background-color:#20280f; background-image:linear-gradient(#161c0ca3,#161c0ca3),url('assets/military-card-background.webp'); }
     .politics .card-content { background-color:#09162c; background-image:linear-gradient(#09162ca3,#09162ca3),url('assets/politics-card-background.webp'); }
+    .library .card-content { background-color:#39251c; background-image:repeating-linear-gradient(115deg,#ffffff06 0 1px,transparent 1px 10px),linear-gradient(155deg,#533321,#2b1b16 72%); }
     .card-category { text-transform:uppercase; font-size:9px; font-weight:600; letter-spacing:.17em; color:#fff; margin:0 0 12px; }
     h3 { font-family:Georgia, 'Times New Roman', serif; font-size:28px; font-weight:400; line-height:1.13; letter-spacing:-.5px; margin-bottom:14px; }
     .card-description { color:#fff; font-size:13px; line-height:1.8; margin-bottom:20px; }
@@ -80,6 +83,7 @@
     .credits a { text-decoration-thickness:1px; text-underline-offset:3px; }
     .credits a:focus-visible,.credits summary:focus-visible { outline-color:#fff; }
     .page-end { height:40px; }
+    @media (min-width:1280px) { .site-list { grid-template-columns:repeat(4,minmax(0,1fr)); } }
     @media (min-width:1700px) { .shell { width:min(1330px,calc(100% - 140px)); } .card-art { height:275px; } }
     @media (max-width:1000px) {
       .shell { width:calc(100% - 48px); }
@@ -142,7 +146,7 @@
   <main id="main" class="shell">
     <section class="collection" id="collection" aria-labelledby="collection-title">
       <div class="section-heading"><h2 id="collection-title">Explore the collection</h2><p>New history projects will be added as the collection grows.</p></div>
-      <!-- To add a project, copy a list item, update its destination and copy, and add a credited archival image. -->
+      <!-- To add a project, copy a list item and update its destination, text, image, and image credit. -->
       <ul class="site-list">
         <li>
           <a class="site-card indigenous" href="https://IndigenousNorthAmerica.org">
@@ -187,6 +191,19 @@
             </div>
           </a>
         </li>
+        <li>
+          <a class="site-card library" href="https://pfingstenlibrary.com/">
+            <figure class="card-art">
+              <img src="assets/pfingsten-library.jpg" width="1536" height="1024" alt="" loading="lazy">
+            </figure>
+            <div class="card-content">
+              <p class="card-category">Books &amp; reading</p>
+              <h3>Pfingsten<br>Family Library</h3>
+              <p class="card-description">A place for the Pfingsten family to share books, reading notes, and memories.</p>
+              <div class="card-bottom"><span class="domain">Pfingsten<wbr>Library.com</span><span class="arrow" aria-hidden="true">↗</span></div>
+            </div>
+          </a>
+        </li>
       </ul>
     </section>
     <details class="credits" id="image-credits">
@@ -201,6 +218,7 @@
         <li><a href="https://www.archives.gov/research/still-pictures/military">Into the Jaws of Death</a>, Robert F. Sargent, U.S. Coast Guard, June 6, 1944. National Archives, 26-G-2343. Public domain.</li>
         <li><a href="https://www.loc.gov/pictures/item/2016844711/">Suffrage parade</a>, March 3, 1913. Library of Congress. No known restrictions on publication.</li>
         <li><a href="https://www.loc.gov/item/2004671911/">Frederick Douglass</a>, George Francis Schreiber, April 26, 1870. Library of Congress. No known restrictions on publication.</li>
+        <li>Library illustration from the <a href="https://pfingstenlibrary.com/">Pfingsten Family Library</a> homepage.</li>
       </ul>
     </details>
     <div class="page-end" aria-hidden="true"></div>
