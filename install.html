@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#183f30">
+  <title>Install Robey Productions</title>
+  <link rel="manifest" href="/app.webmanifest">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico?v=gold-1" sizes="16x16 32x32 48x48">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=gold-1" sizes="180x180">
+  <script src="/install-app.js" defer></script>
+  <style>
+    * { box-sizing:border-box; }
+    body { margin:0; background:#183f30; color:#203a2d; font:16px/1.55 Arial, Helvetica, sans-serif; }
+    main { width:min(600px,calc(100% - 32px)); margin:clamp(16px,5vw,58px) auto; padding:clamp(22px,5vw,38px); background:#f8f5ec; }
+    a { color:inherit; text-underline-offset:3px; }
+    a:focus-visible,button:focus-visible { outline:3px solid #a45b29; outline-offset:4px; }
+    .home-link { font-size:14px; }
+    header { margin-top:24px; }
+    header img { display:block; border-radius:12px; }
+    h1 { margin:12px 0 8px; font:700 clamp(27px,5vw,36px)/1.15 Georgia, 'Times New Roman', serif; }
+    p { margin:0 0 18px; }
+    button { margin:0 0 16px; border:0; background:#183f30; color:#fff; padding:10px 18px; font:inherit; font-weight:700; cursor:pointer; }
+    dl { margin:0; }
+    dl > div { padding:12px 0; border-top:1px solid #d7d3c6; }
+    dl > div:last-child { padding-bottom:0; }
+    dt { font-weight:700; margin-bottom:3px; }
+    dd { margin:0; font-size:14px; }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="home-link" href="/">← Robey Productions home</a>
+    <header>
+      <img src="/assets/app-icon-192.png" alt="" width="64" height="64">
+      <h1>Install Robey Productions</h1>
+      <p>Open the history collection from your home screen or apps menu.</p>
+    </header>
+    <button type="button" data-install-trigger hidden>Install app</button>
+    <p data-install-success role="status" hidden>Robey Productions is installed.</p>
+    <dl data-install-guide>
+      <div>
+        <dt>iPhone or iPad</dt>
+        <dd>In Safari, tap <strong>Share</strong> and choose <strong>Add to Home Screen</strong>. Turn on <strong>Open as Web App</strong> if it appears, then tap <strong>Add</strong>.</dd>
+      </div>
+      <div>
+        <dt>Android</dt>
+        <dd>In Chrome, open the browser menu and choose <strong>Install and create shortcut</strong> or <strong>Add to Home screen</strong>, then select <strong>Install</strong>.</dd>
+      </div>
+      <div>
+        <dt>Chrome or Edge on a computer</dt>
+        <dd>Select the install icon in the address bar or look for the install option in the browser menu.</dd>
+      </div>
+      <div>
+        <dt>Safari on a Mac</dt>
+        <dd>From the menu bar, choose <strong>File → Add to Dock</strong>, then click <strong>Add</strong>.</dd>
+      </div>
+    </dl>
+  </main>
+</body>
+</html>

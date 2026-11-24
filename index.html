@@ -8,9 +8,11 @@
   <meta name="theme-color" content="#183f30">
   <title>Robey Productions | History Study Guides</title>
   <link rel="canonical" href="https://robeyproductions.org/">
+  <link rel="manifest" href="/app.webmanifest">
   <link rel="icon" type="image/x-icon" href="/favicon.ico?v=gold-1" sizes="16x16 32x32 48x48">
   <link rel="icon" type="image/png" href="/favicon-96.png?v=gold-1" sizes="96x96">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=gold-1" sizes="180x180">
+  <script src="/install-app.js" defer></script>
   <style>
     :root { --green:#183f30; --ink:#203a2d; --muted:#526057; --paper:#f8f5ec; --line:#d7d3c6; --banner-gold:#c9a34b; --banner-red:#a02a29; }
     * { box-sizing:border-box; }
@@ -41,6 +43,9 @@
     .masthead h1 span { -webkit-text-stroke:.3px var(--banner-red); paint-order:stroke fill; }
     .shell { width:min(1190px,calc(100% - 96px)); margin-inline:auto; }
     .masthead-introduction { max-width:960px; margin:22px auto 0; font-size:18px; line-height:1.8; letter-spacing:normal; text-transform:none; color:inherit; -webkit-text-stroke:.28px var(--banner-red); paint-order:stroke fill; }
+    .install-link { display:inline-block; margin-top:8px; padding:6px 4px; color:#fff; font-size:13px; line-height:1.4; text-underline-offset:3px; }
+    .install-link:focus-visible { outline-color:#fff; }
+    .install-link[hidden] { display:none; }
     .collection { margin-top:32px; scroll-margin-top:24px; }
     .section-heading { display:flex; justify-content:space-between; align-items:center; gap:26px; background:var(--green); color:#fff; padding:22px 26px; margin-bottom:20px; text-transform:uppercase; }
     h2 { font-family:Georgia, 'Times New Roman', serif; font-size:32px; font-weight:400; letter-spacing:-.5px; margin-bottom:0; }
@@ -124,7 +129,7 @@
     }
     @media (max-width:370px) { h1 { font-size:27px; } .card-content { padding:22px 20px; } h3 { font-size:27px; } .domain { font-size:18px; } }
     @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } * { transition:none !important; } }
-    @media print { .backdrop,.skip,.image-note,.credits,.page-end { display:none; } body { background:white; } .shell { width:100%; } .masthead { box-shadow:none; } .site-list { gap:15px; } .site-card { box-shadow:none; break-inside:avoid; } .card-art { height:170px; } }
+    @media print { .backdrop,.skip,.install-link,.image-note,.credits,.page-end { display:none; } body { background:white; } .shell { width:100%; } .masthead { box-shadow:none; } .site-list { gap:15px; } .site-card { box-shadow:none; break-inside:avoid; } .card-art { height:170px; } }
   </style>
 </head>
 <body>
@@ -142,6 +147,7 @@
   <header class="masthead">
     <h1><span>WELCOME TO</span>ROBEY PRODUCTIONS</h1>
     <p class="masthead-introduction">A free archive of history study guides for students, teachers, researchers and anyone curious about the past. Explore any of the growing historical websites.</p>
+    <a class="install-link" href="/install.html" data-install-trigger>Install app</a>
   </header>
   <main id="main" class="shell">
     <section class="collection" id="collection" aria-labelledby="collection-title">
