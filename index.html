@@ -73,12 +73,15 @@
     .immigration .card-art > img { object-position:center 45%; }
     .railroad .card-art { background:#2f231b; border-bottom-color:#b98a46; }
     .railroad .card-art > img { object-fit:contain; }
+    .south-america .card-art { background:radial-gradient(ellipse at center,#675174,#302640); border-bottom-color:#d58c79; }
+    .south-america .card-art > img { object-fit:contain; }
     @supports (object-view-box: inset(0)) {
       .railroad .card-art > img {
         object-view-box:inset(5.1% 50.2% 9.8% 7.4%);
         object-fit:cover;
         object-position:center 65%;
       }
+      .south-america .card-art > img { object-view-box:inset(18% 4% 20% 4%); }
     }
     .image-note { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent,#132419da); color:#fffaf0; font-size:9px; letter-spacing:.08em; padding:24px 15px 11px; line-height:1.4; }
     .card-content { display:flex; flex-direction:column; flex:1; padding:23px 23px 21px; color:#fff; background-size:100% 100%; background-position:center; background-repeat:no-repeat; }
@@ -97,6 +100,10 @@
     .railroad .card-content {
       background-color:#502817;
       background-image:radial-gradient(ellipse at top right,#c4824155,transparent 65%),repeating-linear-gradient(168deg,#efbe7515 0 1px,transparent 1px 15px),linear-gradient(150deg,#743824,#3a241a 82%);
+    }
+    .south-america .card-content {
+      background-color:#30254d;
+      background-image:radial-gradient(ellipse at top right,#bd595c60,transparent 65%),repeating-linear-gradient(45deg,#f5bcad13 0 1px,transparent 1px 14px),repeating-linear-gradient(-45deg,#f5bcad0c 0 1px,transparent 1px 14px),linear-gradient(150deg,#50305d,#232d57 82%);
     }
     .card-category { text-transform:uppercase; font-size:9px; font-weight:600; letter-spacing:.17em; color:#fff; margin:0 0 12px; }
     h3 { font-family:Georgia, 'Times New Roman', serif; font-size:28px; font-weight:400; line-height:1.13; letter-spacing:-.5px; margin-bottom:14px; }
@@ -279,6 +286,20 @@
             </div>
           </a>
         </li>
+        <li id="indigenous-south-america">
+          <a class="site-card south-america" href="https://robeys-atlas-indigenous-south-america.calmlamp34.chatgpt.site/" aria-labelledby="south-america-card-title">
+            <figure class="card-art">
+              <img src="assets/mapuche-family-1890.jpg" width="960" height="1566" alt="A Mapuche family of five poses for a portrait around 1890." loading="lazy">
+              <figcaption class="image-note">MAPUCHE FAMILY · C. 1890</figcaption>
+            </figure>
+            <div class="card-content">
+              <p class="card-category">Peoples &amp; cultures</p>
+              <h3 class="study-guide-title" id="south-america-card-title">Indigenous South America</h3>
+              <p class="card-description">Browse an interactive map of South America and an alphabetical directory of its Indigenous peoples.</p>
+              <div class="card-bottom"><span class="study-guide-platform">ChatGPT study guide</span><span class="arrow" aria-hidden="true">↗</span></div>
+            </div>
+          </a>
+        </li>
       </ul>
     </section>
     <details class="credits" id="image-credits">
@@ -297,6 +318,7 @@
         <li><a href="https://dlg.usg.edu/record/nge_ngen_m-10216">World’s Parliament of Religions</a>, Chicago, 1893. Digital Library of Georgia and Wikimedia Commons. Public domain.</li>
         <li><a href="https://www.loc.gov/item/2014710704/">Arriving at Ellis Island</a>, Bain News Service, c. 1915–20. Library of Congress, LC-DIG-ggbain-30547. No known restrictions on publication.</li>
         <li><a href="https://exhibits.lib.usu.edu/items/show/19212">End of Track, on Humboldt Plains</a>, Alfred A. Hart, 1865–69. Library of Congress, via Utah State University Digital Exhibits. Public domain.</li>
+        <li><a href="https://www.memoriachilena.gob.cl/602/w3-article-99105.html">Mapuche family, c. 1890</a>, National Library of Chile, Memoria Chilena, MC0004280. Public domain.</li>
       </ul>
     </details>
     <div class="page-end" aria-hidden="true"></div>
