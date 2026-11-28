@@ -7,7 +7,7 @@
   <meta name="color-scheme" content="light">
   <meta name="theme-color" content="#183f30">
   <title>Robey Productions | History Study Guides</title>
-  <link rel="canonical" href="https://robeyproductions.org/">
+  <link rel="canonical" href="https://robeyproductions.com/">
   <link rel="manifest" href="/app.webmanifest">
   <link rel="icon" type="image/x-icon" href="/favicon.ico?v=gold-1" sizes="16x16 32x32 48x48">
   <link rel="icon" type="image/png" href="/favicon-96.png?v=gold-1" sizes="96x96">
@@ -67,17 +67,31 @@
     .politics .lincoln-portrait { object-position:center 20%; }
     .library .card-art { background:#342217; border-bottom-color:#9b6a3d; }
     .library .card-art > img { object-position:85% 60%; }
+    .religion .card-art { background:#563243; border-bottom-color:#bc8550; }
+    .religion .card-art > img { object-position:center 44%; }
+    .immigration .card-art { background:#244850; border-bottom-color:#59a494; }
+    .immigration .card-art > img { object-position:center 45%; }
     .image-note { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent,#132419da); color:#fffaf0; font-size:9px; letter-spacing:.08em; padding:24px 15px 11px; line-height:1.4; }
     .card-content { display:flex; flex-direction:column; flex:1; padding:23px 23px 21px; color:#fff; background-size:100% 100%; background-position:center; background-repeat:no-repeat; }
     .indigenous .card-content { background-color:#082b24; background-image:linear-gradient(#082b24a3,#082b24a3),url('assets/indigenous-card-background.webp'); }
     .military .card-content { background-color:#20280f; background-image:linear-gradient(#161c0ca3,#161c0ca3),url('assets/military-card-background.webp'); }
     .politics .card-content { background-color:#09162c; background-image:linear-gradient(#09162ca3,#09162ca3),url('assets/politics-card-background.webp'); }
     .library .card-content { background-color:#39251c; background-image:repeating-linear-gradient(115deg,#ffffff06 0 1px,transparent 1px 10px),linear-gradient(155deg,#533321,#2b1b16 72%); }
+    .religion .card-content {
+      background-color:#3c203e;
+      background-image:radial-gradient(ellipse at top right,#a860495c,transparent 65%),repeating-linear-gradient(135deg,#efc49710 0 1px,transparent 1px 13px),linear-gradient(150deg,#5b2946,#30203f 80%);
+    }
+    .immigration .card-content {
+      background-color:#1c3d4b;
+      background-image:radial-gradient(ellipse at bottom right,#358b8370,transparent 65%),repeating-linear-gradient(30deg,#8fc5b211 0 1px,transparent 1px 16px),linear-gradient(150deg,#23505a,#182d46 80%);
+    }
     .card-category { text-transform:uppercase; font-size:9px; font-weight:600; letter-spacing:.17em; color:#fff; margin:0 0 12px; }
     h3 { font-family:Georgia, 'Times New Roman', serif; font-size:28px; font-weight:400; line-height:1.13; letter-spacing:-.5px; margin-bottom:14px; }
     .card-description { color:#fff; font-size:13px; line-height:1.8; margin-bottom:20px; }
     .card-bottom { border-top:1px solid #ffffff66; padding-top:16px; display:flex; align-items:center; justify-content:space-between; gap:10px; margin-top:auto; }
     .domain { font-size:20px; font-weight:700; line-height:1.45; letter-spacing:-.025em; overflow-wrap:anywhere; text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:4px; }
+    .study-guide-title { text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:4px; }
+    .study-guide-platform { font-size:13px; line-height:1.45; }
     .arrow { font-size:22px; line-height:1; color:#fff; flex:none; }
     .credits { width:fit-content; max-width:100%; margin:22px auto 0; padding:9px 14px; background:var(--green); color:#fff; font-size:11px; line-height:1.8; }
     .credits[open] { width:min(640px,100%); padding:16px 20px; }
@@ -88,7 +102,7 @@
     .credits a { text-decoration-thickness:1px; text-underline-offset:3px; }
     .credits a:focus-visible,.credits summary:focus-visible { outline-color:#fff; }
     .page-end { height:40px; }
-    @media (min-width:1280px) { .site-list { grid-template-columns:repeat(4,minmax(0,1fr)); } }
+    @media (min-width:1024px) { .site-list { grid-template-columns:repeat(3,minmax(0,1fr)); } }
     @media (min-width:1700px) { .shell { width:min(1330px,calc(100% - 140px)); } .card-art { height:275px; } }
     @media (max-width:1000px) {
       .shell { width:calc(100% - 48px); }
@@ -210,11 +224,39 @@
             </div>
           </a>
         </li>
+        <li>
+          <a class="site-card religion" href="https://faith-in-america-history.george-robey.chatgpt.site/" aria-labelledby="religion-card-title">
+            <figure class="card-art">
+              <img src="assets/worlds-parliament-of-religions.jpg" width="960" height="439" alt="Delegates gathered onstage at the 1893 World’s Parliament of Religions in Chicago." loading="lazy">
+              <figcaption class="image-note">WORLD’S PARLIAMENT OF RELIGIONS · 1893</figcaption>
+            </figure>
+            <div class="card-content">
+              <p class="card-category">Faith &amp; society</p>
+              <h3 class="study-guide-title" id="religion-card-title">Religion of America</h3>
+              <p class="card-description">Explore religious history and changing beliefs in America by year and by state.</p>
+              <div class="card-bottom"><span class="study-guide-platform">ChatGPT study guide</span><span class="arrow" aria-hidden="true">↗</span></div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="site-card immigration" href="https://immigration-in-america.george-robey.chatgpt.site/" aria-labelledby="immigration-card-title">
+            <figure class="card-art">
+              <img src="assets/arriving-at-ellis-island.jpg" width="1024" height="699" alt="Immigrants, including a child, carrying luggage outside the Ellis Island immigration station." loading="lazy">
+              <figcaption class="image-note">ARRIVING AT ELLIS ISLAND · C. 1915–20</figcaption>
+            </figure>
+            <div class="card-content">
+              <p class="card-category">Migration &amp; settlement</p>
+              <h3 class="study-guide-title" id="immigration-card-title">Immigration in America</h3>
+              <p class="card-description">Trace immigration to America from the colonial era onward by year and by state.</p>
+              <div class="card-bottom"><span class="study-guide-platform">ChatGPT study guide</span><span class="arrow" aria-hidden="true">↗</span></div>
+            </div>
+          </a>
+        </li>
       </ul>
     </section>
     <details class="credits" id="image-credits">
       <summary>Historical images &amp; credits</summary>
-      <p class="credit-intro">Historical photographs and museum artworks come from public collections. The three decorative card backgrounds were created with AI for Robey Productions.</p>
+      <p class="credit-intro">Historical photographs and museum artworks come from public collections. Three decorative card backgrounds were created with AI for Robey Productions.</p>
       <ul>
         <li><a href="https://www.clevelandart.org/art/1982.61">Bandolier (Shoulder) Bag</a>, Anishinaabe (Ojibwe), 1880s? The Cleveland Museum of Art, James Albert and Mary Gardiner Ford Memorial Fund, 1982.61. CC0.</li>
         <li><a href="https://www.clevelandart.org/art/1921.555">Banded Wearing Blanket (Diyugi)</a>, Navajo (Diné) or Zuni, c. 1880–90. The Cleveland Museum of Art, Gift of J. H. Wade, 1921.555. CC0.</li>
@@ -225,6 +267,8 @@
         <li><a href="https://www.loc.gov/pictures/item/2016844711/">Suffrage parade</a>, March 3, 1913. Library of Congress. No known restrictions on publication.</li>
         <li><a href="https://www.loc.gov/item/2004671911/">Frederick Douglass</a>, George Francis Schreiber, April 26, 1870. Library of Congress. No known restrictions on publication.</li>
         <li>Library illustration from the <a href="https://pfingstenlibrary.com/">Pfingsten Family Library</a> homepage.</li>
+        <li><a href="https://dlg.usg.edu/record/nge_ngen_m-10216">World’s Parliament of Religions</a>, Chicago, 1893. Digital Library of Georgia and Wikimedia Commons. Public domain.</li>
+        <li><a href="https://www.loc.gov/item/2014710704/">Arriving at Ellis Island</a>, Bain News Service, c. 1915–20. Library of Congress, LC-DIG-ggbain-30547. No known restrictions on publication.</li>
       </ul>
     </details>
     <div class="page-end" aria-hidden="true"></div>

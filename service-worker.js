@@ -1,5 +1,5 @@
 const cachePrefix = "robey-productions-app-";
-const cacheName = cachePrefix + "1";
+const cacheName = cachePrefix + "2";
 const pages = new Map([
   ["/", "/"],
   ["/index.html", "/"],
@@ -16,6 +16,7 @@ const artwork = [
   "/favicon.ico?v=gold-1",
   "/favicon-96.png?v=gold-1",
   "/apple-touch-icon.png?v=gold-1",
+  "/assets/arriving-at-ellis-island.jpg",
   "/assets/blanket.jpg",
   "/assets/douglass.jpg",
   "/assets/history.jpg",
@@ -27,7 +28,8 @@ const artwork = [
   "/assets/military.jpg",
   "/assets/pfingsten-library.jpg",
   "/assets/politics-card-background.webp",
-  "/assets/washington.jpg"
+  "/assets/washington.jpg",
+  "/assets/worlds-parliament-of-religions.jpg"
 ];
 const staticFiles = new Set([...appFiles, ...artwork]);
 

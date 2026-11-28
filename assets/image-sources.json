@@ -121,5 +121,29 @@
     "width": 1536,
     "height": 1024,
     "credit": "Pfingsten Family Library"
+  },
+  {
+    "filename": "worlds-parliament-of-religions.jpg",
+    "title": "World’s Parliament of Religions",
+    "date": "1893",
+    "sourceUrl": "https://dlg.usg.edu/record/nge_ngen_m-10216",
+    "rightsSourceUrl": "https://commons.wikimedia.org/wiki/File:1893parliament.jpg",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/1893parliament.jpg/960px-1893parliament.jpg",
+    "width": 960,
+    "height": 439,
+    "rights": "Public domain.",
+    "credit": "Digital Library of Georgia, New Georgia Encyclopedia collection. Digital image via Wikimedia Commons."
+  },
+  {
+    "filename": "arriving-at-ellis-island.jpg",
+    "title": "Arriving at Ellis Island",
+    "date": "Between circa 1915 and circa 1920",
+    "creator": "Bain News Service",
+    "sourceUrl": "https://www.loc.gov/item/2014710704/",
+    "imageUrl": "https://tile.loc.gov/storage-services/service/pnp/ggbain/30500/30547v.jpg",
+    "width": 1024,
+    "height": 699,
+    "rights": "No known restrictions on publication.",
+    "credit": "Library of Congress, Prints & Photographs Division, George Grantham Bain Collection. LC-DIG-ggbain-30547."
   }
 ]
