@@ -71,6 +71,15 @@
     .religion .card-art > img { object-position:center 44%; }
     .immigration .card-art { background:#244850; border-bottom-color:#59a494; }
     .immigration .card-art > img { object-position:center 45%; }
+    .railroad .card-art { background:#2f231b; border-bottom-color:#b98a46; }
+    .railroad .card-art > img { object-fit:contain; }
+    @supports (object-view-box: inset(0)) {
+      .railroad .card-art > img {
+        object-view-box:inset(5.1% 50.2% 9.8% 7.4%);
+        object-fit:cover;
+        object-position:center 65%;
+      }
+    }
     .image-note { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent,#132419da); color:#fffaf0; font-size:9px; letter-spacing:.08em; padding:24px 15px 11px; line-height:1.4; }
     .card-content { display:flex; flex-direction:column; flex:1; padding:23px 23px 21px; color:#fff; background-size:100% 100%; background-position:center; background-repeat:no-repeat; }
     .indigenous .card-content { background-color:#082b24; background-image:linear-gradient(#082b24a3,#082b24a3),url('assets/indigenous-card-background.webp'); }
@@ -84,6 +93,10 @@
     .immigration .card-content {
       background-color:#1c3d4b;
       background-image:radial-gradient(ellipse at bottom right,#358b8370,transparent 65%),repeating-linear-gradient(30deg,#8fc5b211 0 1px,transparent 1px 16px),linear-gradient(150deg,#23505a,#182d46 80%);
+    }
+    .railroad .card-content {
+      background-color:#502817;
+      background-image:radial-gradient(ellipse at top right,#c4824155,transparent 65%),repeating-linear-gradient(168deg,#efbe7515 0 1px,transparent 1px 15px),linear-gradient(150deg,#743824,#3a241a 82%);
     }
     .card-category { text-transform:uppercase; font-size:9px; font-weight:600; letter-spacing:.17em; color:#fff; margin:0 0 12px; }
     h3 { font-family:Georgia, 'Times New Roman', serif; font-size:28px; font-weight:400; line-height:1.13; letter-spacing:-.5px; margin-bottom:14px; }
@@ -252,6 +265,20 @@
             </div>
           </a>
         </li>
+        <li id="railroad">
+          <a class="site-card railroad" href="https://transcontinental-railroad-construction-atlas.george-robey.chatgpt.site/" aria-labelledby="railroad-card-title">
+            <figure class="card-art">
+              <img src="assets/humboldt-railhead.jpg" width="1200" height="597" alt="Central Pacific crews working at the end of the tracks on Nevada’s Humboldt Plains." loading="lazy">
+              <figcaption class="image-note">CENTRAL PACIFIC TRACK CREWS · 1865–69</figcaption>
+            </figure>
+            <div class="card-content">
+              <p class="card-category">Railroads &amp; engineering</p>
+              <h3 class="study-guide-title" id="railroad-card-title">Transcontinental Railroad Construction</h3>
+              <p class="card-description">Follow the building of the first transcontinental railroad month by month from 1863 to 1869.</p>
+              <div class="card-bottom"><span class="study-guide-platform">ChatGPT study guide</span><span class="arrow" aria-hidden="true">↗</span></div>
+            </div>
+          </a>
+        </li>
       </ul>
     </section>
     <details class="credits" id="image-credits">
@@ -269,6 +296,7 @@
         <li>Library illustration from the <a href="https://pfingstenlibrary.com/">Pfingsten Family Library</a> homepage.</li>
         <li><a href="https://dlg.usg.edu/record/nge_ngen_m-10216">World’s Parliament of Religions</a>, Chicago, 1893. Digital Library of Georgia and Wikimedia Commons. Public domain.</li>
         <li><a href="https://www.loc.gov/item/2014710704/">Arriving at Ellis Island</a>, Bain News Service, c. 1915–20. Library of Congress, LC-DIG-ggbain-30547. No known restrictions on publication.</li>
+        <li><a href="https://exhibits.lib.usu.edu/items/show/19212">End of Track, on Humboldt Plains</a>, Alfred A. Hart, 1865–69. Library of Congress, via Utah State University Digital Exhibits. Public domain.</li>
       </ul>
     </details>
     <div class="page-end" aria-hidden="true"></div>

@@ -1,5 +1,5 @@
 const cachePrefix = "robey-productions-app-";
-const cacheName = cachePrefix + "2";
+const cacheName = cachePrefix + "3";
 const pages = new Map([
   ["/", "/"],
   ["/index.html", "/"],
@@ -20,6 +20,7 @@ const artwork = [
   "/assets/blanket.jpg",
   "/assets/douglass.jpg",
   "/assets/history.jpg",
+  "/assets/humboldt-railhead.jpg",
   "/assets/indigenous-art.jpg",
   "/assets/indigenous-card-background.webp",
   "/assets/indigenous-portrait.jpg",
